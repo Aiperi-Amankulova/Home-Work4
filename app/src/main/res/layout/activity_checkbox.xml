@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="146dp"
+        android:layout_height="131dp"
+        android:maxWidth="250dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/cbFirstFilm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+    <CheckBox
+        android:id="@+id/cbFirstFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+        android:text="Mulan (I)"
+        />
+    <CheckBox
+        android:id="@+id/cbSecondFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cbFirstFilm"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Wonder Woman"
+        />
+    <CheckBox
+        android:id="@+id/cbThirdFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cbSecondFilm"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="No Time to Die"
+        />
+    <Button
+        android:id="@+id/btnCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cbThirdFilm"
+        android:layout_margin ="40dp"
+        android:text="BACK"
+        android:textSize="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
